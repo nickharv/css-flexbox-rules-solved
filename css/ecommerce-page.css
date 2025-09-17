@@ -153,6 +153,7 @@ i.fa-th-list {
 
 .products {
   margin-top: 40px;
+  contain: layout style;
 }
 
 .product {
@@ -166,6 +167,11 @@ i.fa-th-list {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05);
 }
 
 .product-name {
@@ -467,6 +473,7 @@ i.fa-th-list {
   header,
   section {
     padding: 10px 15px;
+    width: 100%;
   }
 
   .top-nav {
@@ -474,13 +481,27 @@ i.fa-th-list {
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .top-nav h1 {
+    font-size: 10px;
+  }
+
+  .top-nav a {
+    font-size: 8px;
+  }
+  .top-nav .back-button a {
+    font-size: 8px;
   }
 
   .header-content {
     flex-direction: column;
     gap: 15px;
     align-items: stretch;
+    width: 100%;
   }
 
   .header .exercise-header {

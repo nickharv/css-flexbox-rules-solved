@@ -1,15 +1,18 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html,
-body {
+html {
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
   background-color: #21222c;
   display: flex;
   flex-direction: column;
@@ -74,6 +77,7 @@ header.exercise-header {
   gap: 30px;
   height: 100%;
   align-items: center;
+  font-size: 12px;
 }
 
 .top-nav a {
@@ -84,6 +88,7 @@ header.exercise-header {
   text-decoration: none;
   display: flex;
   gap: 12px;
+  font-size: 12px;
 }
 
 .top-nav a:hover {
@@ -168,5 +173,55 @@ header.exercise-header {
   .exercise p {
     font-size: 14px;
     line-height: 20px;
+  }
+  .logo-search {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .search-bar {
+    width: 100%;
+    max-width: 300px;
+  }
+  .options {
+    justify-content: center;
+  }
+  .option {
+    min-width: 45px;
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  .category {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+  .section-control {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .lines .product {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lines .product-image-wrapper {
+    min-width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .lines-action .product {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lines-action .product-image-wrapper {
+    min-width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .lines-action .product-data {
+    flex-direction: column;
   }
 }
