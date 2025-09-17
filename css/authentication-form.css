@@ -155,3 +155,62 @@ hr {
   border-top: 1px solid #a9a9a9;
   margin: 0;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .forms-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+
+  .forms-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form-group-horizontal-control {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 15px;
+  }
+
+  .form-header {
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 15px;
+    gap: 20px;
+  }
+  .form-group-horizontal-control {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-submit-control {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .form-submit-control input[type="submit"] {
+    width: 100%;
+  }
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
